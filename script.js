@@ -53,10 +53,11 @@ function readSearchData() {
             searchData.push(tmp);
           }
         }
-        console.log(取得したデータ)
+        //結果を表示
+        console.log(取得したデータを代入する)
     }
 }
 
-//関連データを結果に表示する --> let text を consoleしたほうがいいかも
+//関連データを結果に表示する --> let textをconsoleにしたほうがいいかも
 let text = document.getElementById('test').textContent; //(宣言)
     document.getElementById('test').textContent = '＊＊＊取得した情報の表示＊＊＊';
