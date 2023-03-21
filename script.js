@@ -59,4 +59,4 @@ function readSearchData() {
 
 //関連データを結果に表示する --> let text を consoleしたほうがいいかも
 //let text = document.getElementById('test').textContent; //(宣言)
-        document.getElementById('test').textContent = '＊＊＊取得した情報の表示＊＊＊';
+    //document.getElementById('test').textContent = '＊＊＊取得した情報の表示＊＊＊';
