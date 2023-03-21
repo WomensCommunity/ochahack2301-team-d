@@ -28,6 +28,7 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
+    background-image: radial-gradient(at top, #b5e6cf, #9dddad);
   }
   
 /* ∞∞ text styling ∞∞ */
@@ -324,7 +325,6 @@ form {
 }
 
 .select1 {
-margin-top: -22px;
   width: 225px;
   height: 40px;
   cursor: pointer;
@@ -334,7 +334,6 @@ margin-top: -22px;
 }
 
 .select2 {
-    margin-top: -22px;
     width: 225px;
     height: 40px;
     cursor: pointer;
@@ -385,10 +384,6 @@ margin-top: -22px;
     transition: all 250ms cubic-bezier(.4,.25,.3,1);
     opacity: .6;
     }
-.wrap{
-    display:flex;
-    flex-flow:column;
-}
 
 .select_expand:hover::after {opacity: 1}
 .select2_expand:hover::after {opacity: 1}
@@ -435,8 +430,7 @@ margin-top: -22px;
     display: none;
   }
 
-.select_items,
-.select2_items {
+.select_items {
     width: 100%;
     position: absolute;
     top: 0;
@@ -445,7 +439,15 @@ margin-top: -22px;
     border-radius: 2px;
     padding-top: 40px;
   }
-
+  .select2_items {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #2fb5d1;
+    border-radius: 2px;
+    padding-top: 40px;
+  }
 
 .select_input {display: none}
 .select2_input {display: none}
@@ -535,10 +537,6 @@ div.form-example {
     display: table-row;
 }
 
-div.hello2,
-div.hello{
-    margin-top: 150px;
-}
 *,
 *:before,
 *:after {
@@ -577,11 +575,13 @@ button.btn {
 }
 
 .btn--orange,
-a.btn--orange{
+a.btn--orange {
   color: #fff;
   background-color:#006400;
-  margin-top:150px;
+  margin-top:70px;
   font-size: 1.5rem;
+  right: -230px;
+  bottom: -300px;
 }
 .btn--orange:hover,
 a.btn--orange:hover {
@@ -594,6 +594,12 @@ a.btn--radius {
 p {
     text-align: left;
     left:-300px;
+    margin-top: -620px;
     font-size: 1.2rem;
     font-weight:bold;/*太字*/
   }
+
+.wrap{
+    display:flex;
+    flex-flow:row;
+}
