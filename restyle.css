@@ -331,6 +331,8 @@ form {
   background-color: white;
   box-shadow: 0 2px 0 white;
   border-radius: 2px;
+  margin-top: -630px;
+  z-index: 1;
 }
 
 .select2 {
@@ -340,6 +342,8 @@ form {
     background-color: white;
     box-shadow: 0 2px 0 white;
     border-radius: 2px;
+    margin-top: -630px;
+    z-index: 1;
   }
 
 .select_expand {
@@ -578,10 +582,9 @@ button.btn {
 a.btn--orange {
   color: #fff;
   background-color:#006400;
-  margin-top:70px;
+  bottom: 60px;
   font-size: 1.5rem;
-  right: -230px;
-  bottom: -300px;
+  left: 1200px;
 }
 .btn--orange:hover,
 a.btn--orange:hover {
@@ -593,7 +596,7 @@ a.btn--radius {
  }
 p {
     text-align: left;
-    left:-300px;
+    left:-90px;
     margin-top: -620px;
     font-size: 1.2rem;
     font-weight:bold;/*太字*/
@@ -603,3 +606,16 @@ p {
     display:flex;
     flex-flow:row;
 }
+
+.waku {
+  border: solid 2px #2fb5d1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  z-index: 0;
+  }
