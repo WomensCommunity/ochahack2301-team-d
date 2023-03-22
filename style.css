@@ -595,6 +595,7 @@ a.btn--radius {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
+/*pはindex.htmlを使うときはコメントアウト外す必要がある*/
 p {
     /*text-align: left;
     left:-300px;*/
