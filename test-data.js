@@ -15,9 +15,15 @@ const trash_ward = [
   ];
 
   const trash_info = [
+    {id: 1, type: "資源", about: "新聞紙をひとまとめに紐で十字に縛ってください(折込チラシ含む)"},
+    {id: 2, type: "資源", about: "新聞紙をひとまとめに紐で十字に縛ってください(折込チラシ含む"},
+    {id: 3, type: "資源", about: "新聞紙をひとまとめに紐で束ねてください(折込チラシ含む)"},
+    {id: 4, type: "資源", about: "粘着テープを外してください(2枚以上の場合は開いて十字に縛ってください)"},
+    {id: 5, type: "資源", about: "ダンボールのみで束ねて出してください"},
+    {id: 6, type: "資源", about: "ダンボール紙をひとまとめに紐で束ねてください（伝票、粘着テープ、金具ははずす）"},
     {id: 1, type: "資源", about: "縛って"},
-    {id: 2, type: "可燃", about: "燃やせ"},
-    {id: 3, type: "不燃", about: "燃やすな"},
+    {id: 1, type: "資源", about: "縛って"},
+    
   ];
 
 
@@ -85,15 +91,29 @@ function findTrashName(trashName) {
 // 各区ごとの分別一覧
 function clickBtn() {
     if (findWard = "豊島区") {
-        const results = trash_info.find((data) => data.id == 1);
-        if(results == null){
-            searchResult_trashType.textContent = "なし";
-            searchResult_trashAbout.textContent = "なし";
-            return;
+        if (trash_info.find((data) => data.id == 1)) {
+            const results = trash_info.find((data) => data.id == 1);
+            if(results == null){
+                searchResult_trashType.textContent = "なし";
+                searchResult_trashAbout.textContent = "なし";
+                return;
+            }
+            searchResult_trashType.textContent = results.type;
+            searchResult_trashAbout.textContent = results.about;
         }
-        searchResult_trashType.textContent = results.type;
-        searchResult_trashAbout.textContent = results.about;
+        // if (trash_info.find((data) => data.id == 4)) {
+        //     const results = trash_info.find((data) => data.id == 4);
+        //     if(results == null){
+        //         searchResult_trashType.textContent = "なし";
+        //         searchResult_trashAbout.textContent = "なし";
+        //         return;
+        //     }
+        //     searchResult_trashType.textContent = results.type;
+        //     searchResult_trashAbout.textContent = results.about;
+        // }
     }
+    
+
     if (findWard2 = "渋谷区") {
         const results2 = trash_info.find((data) => data.id == 2);
         if(results2 == null){
