@@ -9,19 +9,23 @@
   <script src="test-data.js" defer></script>
 </head>
 <body>
-  <div class="search-container">
-    <!-- 区を入力 -->
-    <label for=""><input type="text" id="search-input"></label>
-    <!-- ゴミの名前を入力 -->
-    <label for=""><input type="text" id="search-input-trashName"></label>
+  <form>
+    <div class="search-container">
+      <!-- 区を入力 -->
+      <label for="" class="box1"><input type="text" id="search-input"></label>
+      <!-- ゴミの名前を入力 -->
+      <label for="" class="box2"><input type="text" id="search-input-trashName"></label>
 
-    <input type="button" value="検索" class="btn btn--orange btn--radius btn--cubic btn--shadow" onclick="clickBtn()" />
-    <!--<input type="button" value="検索" onclick="clickBtn()" />-->
-  </div>
-  <p id="search-result">なし</p>
-  <p id="search-result-name">なし</p>
-  <p id="search-result-type">なし</p>
-  <p id="search-result-about">なし</p>
+      <input type="button" value="検索" class="btn btn--orange btn--radius btn--cubic btn--shadow" onclick="clickBtn()" />
+      <!--<input type="button" value="検索" onclick="clickBtn()" />-->
+    </div>
+    <div class="result">
+      <p id="search-result">なし</p>
+      <p id="search-result-name">なし</p>
+      <p id="search-result-type">なし</p>
+      <p id="search-result-about">なし</p>
+    </div>
+  </form>
 </body>
 </html>
     

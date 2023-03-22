@@ -317,9 +317,9 @@ form {
   width: 100%;
   height: 100%;
   padding-bottom: 75px;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: radial-gradient(at top, #b5e6cf, #9dddad);
 }
 
@@ -560,7 +560,7 @@ button.btn {
   line-height: 1.5;
   position: relative;
   display: inline-block;
-  padding: 0.7rem 4rem;
+  padding: 1rem 4rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -569,7 +569,7 @@ button.btn {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
-  /*vertical-align: middle;*/
+  vertical-align: middle;
   text-decoration: none;
   letter-spacing: 0.1em;
   color: #212529;
@@ -595,17 +595,17 @@ a.btn--radius {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
-/*pはindex.htmlを使うときはコメントアウト外す必要がある*/
+
 p {
-    /*text-align: left;
-    left:-300px;*/
+    text-align: left;
+    left:-300px;
     font-size: 1.3rem;
     font-weight:bold;/*太字*/
     font-family: 'M PLUS Rounded 1c', sans-serif;
   }
   .box1 {
     padding: 0.5em 1em;
-    /*margin: 2em 0;*/
+    margin: 2em 0;
     font-weight: bold;
     color: #6091d3;/*文字色*/
     background: #FFF;
@@ -620,15 +620,6 @@ p {
     background: #FFF;
     border: solid 3px #6091d3;/*線*/
     border-radius: 10px;/*角の丸み*/
-}
-.search-container{
-  position: relative; /* 今の位置を基準 */
-top: -120px; /* 上から10px */
-left: 20px; /* 左から20px */
-}
-
-.result{
-  margin-top: 20px;
 }
   
   
