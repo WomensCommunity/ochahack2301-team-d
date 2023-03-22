@@ -12,24 +12,37 @@
   <form>
     <div class="search-container">
       <!-- 区を入力 -->
-      <label for="" class="box1"><input type="text" id="search-input"></label>
-      <label for="" class="box1"><input type="text" id="search-input2"></label>
+      <label for="" class="box1"><input type="text" id="search-input" placeholder="※調べたい地域"></label>
+      <label for="" class="box1"><input type="text" id="search-input2" placeholder="住んでいる地域"></label>
       <!-- ゴミの名前を入力 -->
-      <label for="" class="box2"><input type="text" id="search-input-trashName"></label>
+      <label for="" class="box2"><input type="text" id="search-input-trashName" placeholder="※捨てるもの"></label>
 
       <input type="button" value="検索" class="btn btn--orange btn--radius btn--cubic btn--shadow" onclick="clickBtn()" />
       <!--<input type="button" value="検索" onclick="clickBtn()" />-->
     </div>
     <div class="result">
-      <p id="search-result">なし</p>
-      <p id="search-result2">なし</p>
-      <p id="search-result-name">なし</p>
-      <p id="search-result-type">なし</p>
-      <p id="search-result-about">なし</p>
-      <p id="search-result-type2">なし</p>
-      <p id="search-result-about2">なし</p>
+      <div class="result1">
+        <p><span id="search-result">〇〇区</span>では</p>
+        <p><span id="search-result-name">（捨てるもの）</span>は</p>
+        <p><span id="search-result-type">（分類）</span>で</p>
+        <p id="search-result-about">（処理）</p>
+      </div>
+
+      <div class="result2">
+        <p>あなたの住んでいる<span id="search-result2">〇〇区</span>では</p>
+        <p><span id="search-result-type2">（分類）</span>で</p>
+        <p id="search-result-about2">（処理）</p>
+      </div>
     </div>
+    <img class="left" src="1245.png" width="200" height="200">
+    <img class="right" src="1139.png" width="200" height="200">
+    <img class="right" src="1140.png" width="200" height="200">
+    <img class="right" src="1144.png" width="200" height="200">
+    <img class="right" src="1137.png" width="200" height="200">
+    <img class="right" src="1138.png" width="200" height="200">
+    <img class="right" src="ic034.png" width="200" height="200">
   </form>
+
 </body>
 </html>
     

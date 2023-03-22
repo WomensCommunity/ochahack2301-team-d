@@ -625,10 +625,48 @@ p {
   position: relative; /* 今の位置を基準 */
 top: -120px; /* 上から10px */
 left: 20px; /* 左から20px */
+text-align: center;
 }
 
 .result{
   margin-top: 20px;
+}
+
+.result1 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  color: #006400;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  width: 50%;
+  height: 60%;
+  margin-left: auto;
+    margin-right: auto;
+
+}
+.result1 p {
+  margin: 0; 
+  padding: 0;
+}
+
+.result2 {
+  padding: 0.5em 1em;
+  margin: 50px 0;
+  font-weight: bold;
+  color: #717375;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  width: 50%;
+  height: 60%;
+  margin-left: auto;
+    margin-right: auto;
+}
+.result2 p {
+  margin: 0; 
+  padding: 0;
 }
   
   /*
@@ -654,4 +692,12 @@ left: 20px; /* 左から20px */
     margin: auto;
     width: 60px;
     height: 20px;s
+  }*/
+  img{
+    margin-left: 3px;
+    margin-top: 170px;
+  }
+  /*.right{
+    margin-left: auto;
+    margin-right: 0;
   }*/
