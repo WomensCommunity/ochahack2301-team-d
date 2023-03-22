@@ -9,9 +9,9 @@ const trash_ward = [
   ];
 
   const trash_name = [
-    {name: "新聞紙", type: "渋谷"},
-    {name: "ダンボール", type: "資源"},
-    {name: "パンフレット", type: "資源"},
+    {name: "新聞紙"},
+    {name: "ダンボール"},
+    {name: "パンフレット"},
   ];
 
   const trash_info = [
@@ -65,8 +65,8 @@ function findTrashName(trashName) {
 
 // 各区ごとの分別一覧
 function clickBtn() {
-    if ((findWard = "豊島区") && (findTrashName in trash_name)) {
-        const results = trash_info.find((data) => data.id % 3 === 1);
+    if (findWard = "豊島区") {
+        const results = trash_info.find((data) => data.id == 1);
         if(results == null){
             searchResult_trashType.textContent = "なし";
             searchResult_trashAbout.textContent = "なし";
