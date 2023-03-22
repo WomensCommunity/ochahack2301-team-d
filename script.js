@@ -59,5 +59,5 @@ function readSearchData() {
 }
 
 //関連データを結果に表示する --> let textをconsoleにしたほうがいいかも
-//let text = document.getElementById('test').textContent; //(宣言)
+let text = document.getElementById('test').textContent; //(宣言)
     document.getElementById('test').textContent = '＊＊＊取得した情報の表示＊＊＊';
