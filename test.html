@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="test-data.js" defer></script>
+</head>
+<body>
+  <div class="search-container">
+    <!-- 区を入力 -->
+    <label for=""><input type="text" id="search-input"></label>
+    <!-- ゴミの名前を入力 -->
+    <label for=""><input type="text" id="search-input-trashName"></label>
+
+    <input type="button" value="検索" class="btn btn--orange btn--radius btn--cubic btn--shadow" onclick="clickBtn()" />
+  </div>
+  <p id="search-result">なし</p>
+  <p id="search-result-name">なし</p>
+  <p id="search-result-type">なし</p>
+  <p id="search-result-about">なし</p>
+</body>
+</html>
+    
+
+
+
+  <!-- <form class="wrap">
+    <p><span style="color:red;">※</span>調べたい地域
+    <ul class="select1">
+      <li>
+        <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+        <span class="select_label select_label-placeholder">市区町村</span>
+      </li>
+      
+      <li class="select_items">
+        <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+        <label class="select_closeLabel" for="awesomeness-close"></label>
+        
+        <ul class="select_options">
+          <li class="select_option">
+            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-toshima"/>
+            <label class="select_label" for="awesomeness-toshima">豊島区</label>
+          </li>
+  
+          <li class="select_option">
+            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-shibuya"/>
+            <label class="select_label" for="awesomeness-shibuya">渋谷区</label>
+          </li>
+  
+          <li class="select_option">
+            <input class="select_input" type="radio" name="awesomeness" id="awesomeness-bunkyou"/>
+            <label class="select_label" for="awesomeness-bunkyou">文京区</label>
+          </li>
+  
+        </ul>
+        
+        <label class="select_expandLabel" for="awesomeness-opener"></label>
+
+         テスト -->
+        <!-- <p>取得した値 <span id="span1"></span></p>
+        <p>捨てるゴミ <span id="trash"></span></p>
+
+        <input type="text" value="red" id="text1" maxlength="5" />
+        <input type="button" value="ボタン" onclick="getTrashName()" />
+        
+        <script>
+        function clickBtn1() {
+            const t1 = document.getElementById("text1").value;
+            document.getElementById("span1").textContent = t1;
+        }
+
+        function getName() {
+            const result = [];
+            for (const ele of test-data) {
+                result.push(ele.Name);
+            }
+            return result;
+        }
+
+        test(getName(), getTrashName) -->
+        <!-- </script>
+      </li>
+    </ul>
+    </p>
+​
+    <p>普段住んでいる地域
+    <ul class="select2">
+      <li>
+        <input class="select2_close" type="radio" name="awesomeness2" id="awesomeness2-close" value=""/>
+        <span class="select2_label select2_label-placeholder">市区町村</span>
+      </li>
+      
+      <li class="select2_items">
+        <input class="select2_expand" type="radio" name="awesomeness2" id="awesomeness2-opener"/>
+        <label class="select2_closeLabel" for="awesomeness2-close"></label>
+        
+        <ul class="select2_options">
+          <li class="select2_option">
+            <input class="selec2_input" type="radio" name="awesomeness2" id="awesomeness2-toshima"/>
+            <label class="select2_label" for="awesomeness2-toshima">豊島区</label>
+          </li>
+  
+          <li class="select2_option">
+            <input class="select2_input" type="radio" name="awesomeness2" id="awesomeness2-shibuya"/>
+            <label class="select2_label" for="awesomeness2-shibuya">渋谷区</label>
+          </li>
+  
+          <li class="select2_option">
+            <input class="select2_input" type="radio" name="awesomeness2" id="awesomeness2-bunkyou"/>
+            <label class="select2_label" for="awesomeness2-bunkyou">文京区</label>
+          </li>
+  
+        </ul>
+        
+        <label class="select2_expandLabel" for="awesomeness2-opener"></label>
+      </li>
+    </ul>
+   </p>
+​
+    <div class="form-example">
+      <input type="submit" value="検索">
+    </div>
+​
+    
+  </form>
+  
+  
+    <p id="target">ここの色が変わります</p>
+    <form id="form1">
+      <input id="sbox"  id="s" name="s" type="text" placeholder="キーワードを入力" />
+      <input id="sbtn" type="submit" value="検索" />
+    </form>
+    <form id="form2">
+      <input id="sbox"  id="t" name="t" type="text" placeholder="キーワードを入力" />
+      <input id="sbtn" type="submit" value="検索" />
+    </form>
+  <input type="button" value=" ボタン " onclick="changeColor('target');" />
+  --> 
+<!-- </body>
+</html>  -->
