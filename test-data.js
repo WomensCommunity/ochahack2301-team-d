@@ -23,19 +23,28 @@ const trash_ward = [
 
 // 入力欄
 const searchInput = document.querySelector("#search-input");
+const searchInput2 = document.querySelector("#search-input2");
 const searchInputTrash = document.querySelector("#search-input-trashName");
 const searchInputTrashType = document.querySelector("#search-input-trashType");
 
 // 出力欄
 const searchResult_trashWard = document.querySelector("#search-result");
+const searchResult_trashWard2 = document.querySelector("#search-result2");
 const searchResult_trashName = document.querySelector("#search-result-name");
 const searchResult_trashType = document.querySelector("#search-result-type");
 const searchResult_trashAbout = document.querySelector("#search-result-about");
+const searchResult_trashType2 = document.querySelector("#search-result-type2");
+const searchResult_trashAbout2 = document.querySelector("#search-result-about2");
 
 
 searchInput.addEventListener("keyup", (e) => {
     const trashId = (e.target.value);
     findWard(trashId);
+  });
+
+searchInput2.addEventListener("keyup", (e) => {
+    const trashId2 = (e.target.value);
+    findWard2(trashId2);
   });
 
 searchInputTrash.addEventListener("keyup", (e) => {
@@ -53,6 +62,16 @@ function findWard(trashId){
         searchResult_trashWard.textContent = results.ward;
     }
 
+// 比較する区
+function findWard2(trashId2){
+        const results2 = trash_ward.find((data) => data.ward === trashId2);
+        if(results2 == null){
+            searchResult_trashWard2.textContent = "なし";
+            return;
+        }
+        searchResult_trashWard2.textContent = results2.ward;
+    }
+
 // 捨てるものの名称
 function findTrashName(trashName) {
     const results = trash_name.find((data) => data.name === trashName);
@@ -62,7 +81,7 @@ function findTrashName(trashName) {
     }
     searchResult_trashName.textContent = results.name;
 }
-
+し
 // 各区ごとの分別一覧
 function clickBtn() {
     if (findWard = "豊島区") {
@@ -75,6 +94,17 @@ function clickBtn() {
         searchResult_trashType.textContent = results.type;
         searchResult_trashAbout.textContent = results.about;
     }
+    if (findWard2 = "渋谷区") {
+        const results2 = trash_info.find((data) => data.id == 2);
+        if(results2 == null){
+            searchResult_trashType2.textContent = "なし";
+            searchResult_trashAbout2.textContent = "なし";
+            return;
+        }
+        searchResult_trashType2.textContent = results2.type;
+        searchResult_trashAbout2.textContent = results2.about;
+    }
+    
 }
 
 // 2入力すると、infoが表示されなくなった
